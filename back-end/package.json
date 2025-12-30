@@ -4,6 +4,7 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "node server.js",
     "seed": "node scripts/seed.js",
     "seed:mock": "node ./scripts/seed-from-mock.js"

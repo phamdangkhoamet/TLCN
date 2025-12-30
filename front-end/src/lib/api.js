@@ -560,4 +560,31 @@ export const api = {
       },
     },
   },
+
+// ===== Chat giữa người dùng =====
+chats: {
+  // GET /api/chats/partners
+  listPartners() {
+    return request("/api/chats/partners", { auth: true });
+  },
+
+  // GET /api/chats/:userId
+  getConversation(userId) {
+    return request(`/api/chats/${userId}`, { auth: true });
+  },
+
+  // POST /api/chats/:userId
+  sendMessage(userId, body) {
+    return request(`/api/chats/${userId}`, {
+      method: "POST",
+      body,
+      auth: true,
+    });
+  },
+
+  // GET /api/chats/search?q=
+  searchUsers(q) {
+    return request("/api/chats/search", { auth: true, params: { q } });
+  },
+},
 };

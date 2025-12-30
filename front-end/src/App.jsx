@@ -22,7 +22,7 @@ import NewChapter from "./pages/studio/NewChapter";
 import Report from "./pages/Report";
 import UpgradeVipSandbox from "./pages/UpgradeVipSandbox";
 import WheelSpin from "./pages/WheelSpin";
-
+import Chat from "./pages/Chat";
 
 
 // --- Admin pages ---
@@ -63,6 +63,7 @@ export default function App() {
       <Route path="/notifications" element={<Notifications />} />
       <Route path="/author/:id" element={<AuthorProfile />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/chat" element={<Chat />} />
       <Route path="/profile/edit" element={<EditProfile />} />
       <Route path="/studio" element={<AuthorStudio />} />
       <Route path="/studio/new" element={<NewWork />} />

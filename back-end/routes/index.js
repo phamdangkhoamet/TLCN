@@ -20,7 +20,7 @@ import adminAuthors from "./admin.authors.js";
 import adminChaptersRouter from "./admin.chapters.js"; // <- THÊM
 import reportsRouter from "./reports.js";
 import adminReportsRouter from "./admin.reports.js";
-
+import chatsRouter from "./chats.js";
 // ...
 
 
@@ -41,6 +41,7 @@ router.use("/posters", posters);
 router.use("/reports", reportsRouter);
 router.use("/payments", paymentsSandbox); 
 router.use("/authors", followAuthorsRouter);
+router.use("/chats", chatsRouter);
 //admin
 router.use("/admin/users", adminUsers);
 router.use("/admin/novels", adminNovels);
