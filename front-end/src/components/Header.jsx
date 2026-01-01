@@ -137,6 +137,15 @@ export default function Header({
             >
               Thư viện
             </NavLink>
+            <NavLink
+              to="/chat"
+              className={({ isActive }) =>
+                `${navItem} ${isActive ? active : inactive}`
+              }
+            >
+              Chat
+            </NavLink>
+
           </nav>
 
           {/* Right: search + actions */}

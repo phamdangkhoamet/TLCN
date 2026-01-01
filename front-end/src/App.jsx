@@ -72,6 +72,8 @@ export default function App() {
       <Route path="/report" element={<Report />} />
       <Route path="/vip" element={<UpgradeVipSandbox />} />
       <Route path="/wheel-spin" element={<WheelSpin />} />
+      <Route path="/chat" element={<Chat />} />
+
 
 
       {/* Admin pages (được bảo vệ bởi RequireAdmin) */}
